@@ -375,7 +375,6 @@ const TechStack = () => {
     { name: "AWS", icon: "https://cdn.worldvectorlogo.com/logos/aws-2.svg" },
   ];
 
-  // Double the techs for infinite loop
   const doubledTechs = [...techs, ...techs];
 
   return (
