@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3500:3500"
+      - "3500:3000"
     environment:
       APP_URL: "http://localhost:3500"
     volumes:
