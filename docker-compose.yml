@@ -1,0 +1,15 @@
+services:
+  app:
+    container_name: portofolio-lemedoit
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3500:3500"
+    environment:
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      APP_URL: ${APP_URL:-http://localhost:3500}
+    volumes:
+      - .:/app
+      - /app/node_modules
+    restart: unless-stopped
