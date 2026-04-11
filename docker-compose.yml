@@ -7,7 +7,7 @@ services:
     ports:
       - "3500:3500"
     environment:
-      APP_URL: ${APP_URL:-http://localhost:3500}
+      APP_URL: "http://localhost:3500"
     volumes:
       - .:/app
       - /app/node_modules
